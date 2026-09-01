@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lineage 2 საქართველო - N1 L2 სერვერი (Interlude, Gracia, High Five, Classic)</title>
+    
+    <meta name="description" content="Lineage 2 ოფიციალური სერვერი საქართველოში. ითამაშეთ საუკეთესო ქრონიკები: Interlude, Gracia Final, High Five, Classic. სტაბილური პლატფორმა ლაგების გარეშე, სრული მხარდაჭერით Windows, Linux, macOS და Android მოწყობილობებზე!">
+    <meta name="keywords" content="Lineage 2 საქართველო, L2 Georgia, L2 Interlude საქართველოში, L2 High Five, L2 Classic, MMORPG სერვერი, Dalam World">
+    <meta name="author" content="L2 Georgia Community">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Lineage 2 საქართველო - Interlude, Gracia, High Five & Classic">
+    <meta property="og:description" content="ეპიკური PvP ბრძოლები, ციხესიმაგრეთა ალყები და უზარმაზარი ქართული საზოგადოება. შემოგვიერთდით!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://l2georgia.github.io">
+    <meta property="og:image" content="https://srv6-cdn.dalam.world/monthly_2026_09/banner-2.jpg.24568f8523c6a464171e58703ac6e759.jpg?key=ge_banner_hash_9012">
+
+    <style>
+        :root {
+            --bg-color: #080b12;
+            --card-bg: #111722;
+            --accent-color: #f59e0b;
+            --accent-hover: #fbbf24;
+            --text-color: #d1d5db;
+            --text-bright: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'BPG Arial', 'Segoe UI', Tahoma, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.7;
+            padding-bottom: 60px;
+        }
+
+        /* Animated Video Header */
+        .ge-hero {
+            position: relative;
+            width: 100%;
+            height: 85vh;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+            border-bottom: 3px solid var(--accent-color);
+        }
+
+        .ge-hero video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+            z-index: 1;
+        }
+
+        .ge-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(8, 11, 18, 0.4), rgba(8, 11, 18, 0.93));
+            z-index: 2;
+        }
+
+        .ge-hero-content {
+            position: relative;
+            z-index: 3;
+            max-width: 950px;
+            padding: 0 20px;
+        }
+
+        .ge-hero h1 {
+            font-size: 3.3rem;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+            text-shadow: 0 2px 12px rgba(0,0,0,0.9);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 800;
+        }
+
+        .ge-hero p {
+            font-size: 1.3rem;
+            color: var(--text-bright);
+            margin-bottom: 30px;
+            text-shadow: 0 1px 6px rgba(0,0,0,0.9);
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            background-color: var(--accent-color);
+            color: #080b12;
+            padding: 14px 32px;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(245, 158, 11, 0.5);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--text-bright);
+            border: 2px solid var(--accent-color);
+            box-shadow: none;
+        }
+
+        .btn-outline:hover {
+            background-color: var(--accent-color);
+            color: #080b12;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 45px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 35px;
+            margin-bottom: 35px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+            border: 1px solid #1a2333;
+        }
+
+        h2 {
+            color: var(--accent-color);
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #1a2333;
+            padding-bottom: 10px;
+        }
+
+        p, ul {
+            margin-bottom: 16px;
+            font-size: 1.05rem;
+        }
+
+        ul {
+            padding-left: 22px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        .chronicles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .chronicle-badge {
+            background: #172133;
+            padding: 18px;
+            border-radius: 6px;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .chronicle-badge h4 {
+            color: var(--text-bright);
+            margin-bottom: 6px;
+            font-size: 1.1rem;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 6px;
+            background: #000;
+        }
+
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .gallery a img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 6px;
+            transition: transform 0.3s, border-color 0.3s;
+            border: 1px solid #1a2333;
+        }
+
+        .gallery a img:hover {
+            transform: scale(1.03);
+            border-color: var(--accent-color);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #9ca3af;
+            font-size: 0.9rem;
+            border-top: 1px solid #1a2333;
+            padding-top: 25px;
+        }
+
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .ge-hero h1 {
+                font-size: 2.2rem;
+            }
+            .ge-hero p {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="ge-hero">
+        <video autoplay muted loop playsinline poster="https://srv6-cdn.dalam.world/monthly_2026_09/banner-2.jpg.24568f8523c6a464171e58703ac6e759.jpg?key=ge_poster_7712">
+            <source src="https://srv6-cdn.dalam.world/monthly_2026_09/banner.mp4.6ae53b432a1c13861af870b2ce6b9154.mp4?key=ge_video_src_4431" type="video/mp4">
+            თქვენი ბრაუზერი არ მხარს უჭერს ვიდეო ტეგს.
+        </video>
+        <div class="ge-overlay"></div>
+        <div class="ge-hero-content">
+            <h1>Lineage 2 საქართველო</h1>
+            <p>საუკეთესო MMORPG გამოცდილება ქართველი მოთამაშეებისთვის: კლასიკური ინტერლუდიდგან თანამედროვე ქრონიკებამდე</p>
+            <div class="btn-group">
+                <a href="https://dalam.world/#modal-register" class="btn">ანგარიშის შექმნა</a>
+                <a href="https://dalam.world/#modal-downloads" class="btn btn-outline">თამაშის გადმოწერა</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <section class="card">
+            <h2>მოგესალმებით, ქართველო ლ2 მოთამაშეებო!</h2>
+            <p><strong>Lineage 2 საქართველო</strong> — ეს არის უნიკალური პლატფორმა მძიმე (hardcore) MMORPG და კლანური ომების თაყვანისმცემლებისთვის. ჩვენ ვუზრუნველყოფთ სტაბილურ, ლაგების გარეშე გარემოს, რომელიც აერთიანებს ლეგენდარულ <strong>Interlude</strong>, <strong>Gracia Final</strong>, <strong>High Five</strong> და <strong>Classic</strong> ქრონიკების საუკეთესო ელემენტებს.</p>
+            <p>ჩაერთეთ ეპიკურ ბრძოლებში, შექმენით ძლიერი კლანი და დაამტკიცეთ თქვენი უპირატესობა ძლიერ ქართულ საზოგადოებაში.</p>
+            
+            <h3 style="color: var(--text-bright); margin-top: 25px; margin-bottom: 15px;">მხარდაჭერილი ქრონიკები და პლატფორმები</h3>
+            <div class="chronicles-grid">
+                <div class="chronicle-badge">
+                    <h4>Interlude & Classic</h4>
+                    <p>კლასიკური მექანიკა, საინტერესო PvP ტურნირები და ეპიკური ბოსები.</p>
+                </div>
+                <div class="chronicle-badge">
+                    <h4>Gracia Final / Epilogue</h4>
+                    <p>ფრენები, ტერიტორიული ომები და მასშტაბური ბრძოლები.</p>
+                </div>
+                <div class="chronicle-badge">
+                    <h4>High Five</h4>
+                    <p>დაბალანსებული კლასები, კომფორტული ინტერფეისი და მაღალი დინამიკა.</p>
+                </div>
+                <div class="chronicle-badge">
+                    <h4>მრავალპლატფორმული</h4>
+                    <p>ითამაშეთ მარტივად Windows, Linux, macOS და მობილურ Android მოწყობილობებზე.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>თამაშის ვიდეო მიმოხილვა</h2>
+            <div class="video-container">
+                <video controls poster="https://srv6-cdn.dalam.world/monthly_2026_07/05wall01_1600.jpg.a570a5f746d364f9a558c5442828e279.jpg?key=ge_prev_332">
+                    <source src="https://srv6-cdn.dalam.world/monthly_2026_07/355507094_DalamWorldDarkElf.mp4.54c5a2784a3c1b2e7561c610338c39c9.mp4?key=ge_gameplay_991" type="video/mp4">
+                    თქვენი ბრაუზერი არ უზრუნველყოფს ვიდეოს დაკვრას.
+                </video>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>სასარგებლო ბმულები და სერვისები</h2>
+            <ul style="list-style-type: none; padding: 0;">
+                <li style="margin-bottom: 12px;">🌐 <strong>მთავარი პორტალი:</strong> <a href="https://dalam.world/" target="_blank" style="color: var(--accent-color);">dalam.world</a></li>
+                <li style="margin-bottom: 12px;">📖 <strong>ინსტრუქციები და რეიტინგები:</strong> <a href="https://dalam.world/faq" target="_blank" style="color: var(--accent-color);">სერვერის წესები და DUK</a></li>
+                <li style="margin-bottom: 12px;">💬 <strong>საზოგადოების ფორუმი:</strong> <a href="https://dalam.world/forums/" target="_blank" style="color: var(--accent-color);">ქართული და გლობალური დისკუსიები</a></li>
+                <li style="margin-bottom: 12px;">📥 <strong>კლიენტის გადმოწერა:</strong> <a href="https://dalam.world/#modal-downloads" target="_blank" style="color: var(--accent-color);">გადმოწერის ცენტრი</a></li>
+                <li style="margin-bottom: 12px;">🎮 <strong>Discord არხი:</strong> <a href="https://link.dalam.world/discord" target="_blank" style="color: var(--accent-color);">შემოგვიერთდით დისკორდში</a></li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>ეკრანის ანაბეჭდების გალერეა</h2>
+            <p>დააკლიკეთ ნებისმიერ ფოტოს ქვემოთ, რომ გადახვიდეთ მთავარ სერვერზე:</p>
+            <div class="gallery">
+                <a href="https://dalam.world" target="_blank"><img src="https://srv6-cdn.dalam.world/monthly_2026_08/camprest.jpg.3dba6692564993032aad81dd89b5216f.jpg?key=ge_img_1" alt="L2 Georgia 1"></a>
+                <a href="https://dalam.world" target="_blank"><img src="https://srv6-cdn.dalam.world/monthly_2026_07/888888.jpg.ca2774ab512bc63ec97b58e22fe0d049.jpg?key=ge_img_2" alt="L2 Georgia 2"></a>
+                <a href="https://dalam.world" target="_blank"><img src="https://srv6-cdn.dalam.world/monthly_2026_07/1233123.jpg.bc3a7363302cdea5817a7bd6861f5881.jpg?key=ge_img_3" alt="L2 Georgia 3"></a>
+                <a href="https://dalam.world" target="_blank"><img src="https://srv6-cdn.dalam.world/monthly_2026_07/78ba9246e77f8d1905d8506dbcf2156b.jpg.059226f330ec28f5d65808c9e1980b39.jpg?key=ge_img_4" alt="L2 Georgia 4"></a>
+                <a href="https://dalam.world" target="_blank"><img src="https://srv6-cdn.dalam.world/monthly_2026_07/05wall01_1600.jpg.a570a5f746d364f9a558c5442828e279.jpg?key=ge_img_5" alt="L2 Georgia 5"></a>
+                <a href="https://dalam.world" target="_blank"><img src="https://srv6-cdn.dalam.world/monthly_2026_07/1228497862_image(7).jpg.dc18f3187ad74e54523cf74c2524087d.jpg?key=ge_img_6" alt="L2 Georgia 6"></a>
+                <a href="https://dalam.world" target="_blank"><img src="https://srv6-cdn.dalam.world/monthly_2026_07/mirco-cabbia-elfa-fin-2-4.jpg.b061be845dec1c5f4873525d1c37fb8a.jpg?key=ge_img_7" alt="L2 Georgia 7"></a>
+                <a href="https://dalam.world" target="_blank"><img src="https://srv6-cdn.dalam.world/monthly_2026_07/Bridge.jpg.be9462d32ab23a4f972a3e6d1cf58765.jpg?key=ge_img_8" alt="L2 Georgia 8"></a>
+                <a href="https://dalam.world" target="_blank"><img src="https://srv6-cdn.dalam.world/monthly_2026_07/dv3.jpg.7bcf3433a916fda45b4edab362f40cd2.jpg?key=ge_img_9" alt="L2 Georgia 9"></a>
+                <a href="https://dalam.world" target="_blank"><img src="https://srv6-cdn.dalam.world/monthly_2026_07/Oren7.jpg.d3ec8b095aea0ef5609d570e2935aebe.jpg?key=ge_img_10" alt="L2 Georgia 10"></a>
+                <a href="https://dalam.world" target="_blank"><img src="https://srv6-cdn.dalam.world/monthly_2026_07/FoM2.jpg.42658076d8767b9ef46c789f3b1377d1.jpg?key=ge_img_11" alt="L2 Georgia 11"></a>
+                <a href="https://dalam.world" target="_blank"><img src="https://srv6-cdn.dalam.world/monthly_2026_07/Demilika19-1.jpg.a2650d2979d012dadaa96ac813908b46.jpg?key=ge_img_12" alt="L2 Georgia 12"></a>
+                <a href="https://dalam.world" target="_blank"><img src="https://srv6-cdn.dalam.world/monthly_2026_07/Demilika9-1.jpg.349e6b44cc7053ae704f1a69cfff3528.jpg?key=ge_img_13" alt="L2 Georgia 13"></a>
+                <a href="https://dalam.world" target="_blank"><img src="https://srv6-cdn.dalam.world/monthly_2026_07/411008428_.jpg.863a6523ccafdd158ad1ea764ba102e8.jpg?key=ge_img_14" alt="L2 Georgia 14"></a>
+                <a href="https://dalam.world" target="_blank"><img src="https://srv6-cdn.dalam.world/monthly_2026_07/925499585_ChatGPTImage132026.17_43_17.jpg.c97b3178b0a56adf69a25d56e03a9a0c.jpg?key=ge_img_15" alt="L2 Georgia 15"></a>
+            </div>
+        </section>
+
+    </div>
+    <script src="https://res.dalam.world/dwmw.js"></script>
+
+    <footer>
+        <p>&copy; 2026 Lineage 2 საქართველო. ყველა უფლება დაცულია.</p>
+        <p>ოფიციალური პორტალი: <a href="https://dalam.world">dalam.world</a></p>
+    </footer>
+
+</body>
+</html>
